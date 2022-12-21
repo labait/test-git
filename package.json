@@ -1,0 +1,25 @@
+{
+  "name": "test-git",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "rimraf ./dist && parcel build index.html --public-url ./",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnum/test-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magnum/test-git/issues"
+  },
+  "homepage": "https://github.com/magnum/test-git#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.8.2"
+  }
+}
